@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════════════════════════════════════
+       SEO STRUCTURE — Primary ranking signals
+  ═══════════════════════════════════════════ -->
+  <title>Eat Your Weed | Cannabis Edibles, CBD, CBG & CBN for Wellness</title>
+  <meta name="description" content="Eat Your Weed — Discover the power of whole-plant cannabis nutrition. CBD, CBG, CBN edibles and recipes to help you be happy, be healthy, and live long." />
+  <meta name="keywords" content="eat your weed, cannabis edibles, CBD, CBG, CBN, cannabis wellness, marijuana recipes, cannabis cooking, hemp nutrition, whole plant cannabis" />
+  <meta name="author" content="EatYourWeed.com" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.eatyourweed.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.eatyourweed.com/" />
+  <meta property="og:title" content="Eat Your Weed — Cannabis Wellness for Adults" />
+  <meta property="og:description" content="CBD · CBG · CBN · Cannabis Edibles & Recipes. Be Happy. Be Healthy. Live Long." />
+  <meta property="og:image" content="https://www.eatyourweed.com/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Eat Your Weed — Cannabis Wellness" />
+  <meta name="twitter:description" content="Whole-plant cannabis nutrition. CBD, CBG, CBN edibles & recipes." />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "EatYourWeed.com",
+    "url": "https://www.eatyourweed.com",
+    "description": "Cannabis edibles, CBD, CBG, and CBN wellness resources for adults.",
+    "sameAs": []
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── TOKENS ─────────────────────────────────── */
+    :root {
+      --forest:    #0d1f0f;
+      --deep:      #111a0e;
+      --moss:      #1e3320;
+      --fern:      #2d4d2a;
+      --sage:      #4a7c44;
+      --mist:      #8fb88a;
+      --gold:      #c9a84c;
+      --amber:     #e8c97a;
+      --cream:     #f2ead8;
+      --parchment: #ede0c4;
+      --white:     #faf8f2;
+      --serif-display: 'Playfair Display', Georgia, serif;
+      --serif-body:    'Cormorant Garamond', Georgia, serif;
+      --serif-accent:  'IM Fell English', Georgia, serif;
+    }
+
+    /* ─── RESET ──────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    /* ─── BODY / PAGE ────────────────────────────── */
+    body {
+      font-family: var(--serif-body);
+      background-color: var(--forest);
+      color: var(--cream);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ─── BOTANICAL MESH BACKGROUND ──────────────── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 20% 10%,  rgba(45,77,42,0.55) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 80% at 85% 90%,  rgba(30,51,32,0.7)  0%, transparent 65%),
+        radial-gradient(ellipse 40% 50% at 50% 50%,  rgba(10,20,10,0.4)  0%, transparent 80%),
+        radial-gradient(ellipse 100% 100% at 100% 0%, rgba(201,168,76,0.06) 0%, transparent 55%);
+      pointer-events: none;
+    }
+
+    /* Grain overlay */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='512' height='512' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      opacity: 0.035;
+      pointer-events: none;
+    }
+
+    /* ─── LAYOUT WRAPPER ─────────────────────────── */
+    .page {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ─── HEADER BAR ─────────────────────────────── */
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.8rem 0 1.2rem;
+      border-bottom: 1px solid rgba(201,168,76,0.18);
+    }
+
+    .header-wordmark {
+      font-family: var(--serif-display);
+      font-size: 1.05rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .header-tagline {
+      font-family: var(--serif-accent);
+      font-style: italic;
+      font-size: 0.78rem;
+      color: var(--mist);
+      letter-spacing: 0.12em;
+    }
+
+    /* ─── AGE GATE RIBBON ────────────────────────── */
+    .age-ribbon {
+      text-align: center;
+      padding: 0.45rem;
+      background: rgba(201,168,76,0.1);
+      border-bottom: 1px solid rgba(201,168,76,0.12);
+      font-family: var(--serif-body);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--amber);
+    }
+
+    /* ─── HERO ───────────────────────────────────── */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      padding: 6rem 0 5rem;
+      position: relative;
+    }
+
+    /* Decorative vertical rule */
+    .hero::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 10%;
+      height: 80%;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, rgba(201,168,76,0.25) 30%, rgba(201,168,76,0.25) 70%, transparent);
+    }
+
+    .hero-text { padding-right: 3rem; }
+
+    .hero-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin-bottom: 1.5rem;
+      font-family: var(--serif-body);
+      font-size: 0.72rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .hero-eyebrow::before,
+    .hero-eyebrow::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(201,168,76,0.35);
+    }
+
+    .hero-headline {
+      font-family: var(--serif-display);
+      font-size: clamp(3rem, 6vw, 5.5rem);
+      font-weight: 900;
+      line-height: 1.0;
+      letter-spacing: -0.02em;
+      color: var(--white);
+      margin-bottom: 0.3rem;
+    }
+
+    .hero-headline em {
+      font-style: italic;
+      color: var(--amber);
+      display: block;
+    }
+
+    .hero-sub {
+      font-family: var(--serif-accent);
+      font-style: italic;
+      font-size: 1.4rem;
+      color: var(--mist);
+      margin: 1rem 0 2.5rem;
+      line-height: 1.5;
+    }
+
+    .hero-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 3rem;
+    }
+
+    .pill {
+      padding: 0.35rem 1rem;
+      border: 1px solid rgba(201,168,76,0.35);
+      border-radius: 999px;
+      font-family: var(--serif-body);
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--amber);
+      background: rgba(201,168,76,0.06);
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .pill:hover {
+      background: rgba(201,168,76,0.14);
+      border-color: var(--gold);
+    }
+
+    .hero-cta {
+      display: inline-block;
+      padding: 0.9rem 2.8rem;
+      background: var(--gold);
+      color: var(--forest);
+      font-family: var(--serif-display);
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .hero-cta:hover { background: var(--amber); transform: translateY(-2px); }
+
+    /* ─── HERO PHOTO ─────────────────────────────── */
+    .hero-photo-wrap {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .photo-frame {
+      position: relative;
+      width: min(400px, 100%);
+    }
+
+    /* Decorative corner frames */
+    .photo-frame::before,
+    .photo-frame::after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-color: var(--gold);
+      border-style: solid;
+      z-index: 5;
+      opacity: 0.6;
+    }
+
+    .photo-frame::before {
+      top: -10px; left: -10px;
+      border-width: 2px 0 0 2px;
+    }
+
+    .photo-frame::after {
+      bottom: -10px; right: -10px;
+      border-width: 0 2px 2px 0;
+    }
+
+    .photo-inner-frame {
+      position: relative;
+      overflow: hidden;
+      border-radius: 2px;
+    }
+
+    .photo-inner-frame::before,
+    .photo-inner-frame::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-color: var(--gold);
+      border-style: solid;
+      z-index: 5;
+      opacity: 0.4;
+    }
+
+    .photo-inner-frame::before {
+      top: 8px; right: 8px;
+      border-width: 2px 2px 0 0;
+    }
+
+    .photo-inner-frame::after {
+      bottom: 8px; left: 8px;
+      border-width: 0 0 2px 2px;
+    }
+
+    .hero-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      filter: grayscale(0.15) contrast(1.05) brightness(0.95);
+      mix-blend-mode: normal;
+    }
+
+    /* Green tint overlay on photo */
+    .photo-tint {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(13,31,15,0.28) 0%, rgba(45,77,42,0.12) 100%);
+      pointer-events: none;
+      mix-blend-mode: color;
+    }
+
+    /* Gold caption bar */
+    .photo-caption {
+      margin-top: 1rem;
+      text-align: center;
+      font-family: var(--serif-accent);
+      font-style: italic;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      color: var(--mist);
+    }
+
+    /* ─── DIVIDER ─────────────────────────────────── */
+    .ornamental-divider {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      padding: 1rem 0;
+      color: rgba(201,168,76,0.4);
+    }
+
+    .ornamental-divider::before,
+    .ornamental-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(201,168,76,0.3), transparent);
+    }
+
+    .divider-leaf {
+      font-size: 1.1rem;
+      color: var(--sage);
+    }
+
+    /* ─── TAGLINE BANNER ─────────────────────────── */
+    .tagline-banner {
+      padding: 4rem 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .tagline-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 100% at 50% 50%, rgba(45,77,42,0.2) 0%, transparent 70%);
+    }
+
+    .tagline-trio {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .tagline-item {
+      text-align: center;
+    }
+
+    .tagline-icon {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 0.8rem;
+      animation: floatSlow 5s ease-in-out infinite;
+    }
+
+    .tagline-item:nth-child(2) .tagline-icon { animation-delay: 1.5s; }
+    .tagline-item:nth-child(3) .tagline-icon { animation-delay: 3s; }
+
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    .tagline-word {
+      display: block;
+      font-family: var(--serif-display);
+      font-size: clamp(1.6rem, 3.5vw, 2.8rem);
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: -0.01em;
+    }
+
+    .tagline-word em {
+      font-style: italic;
+      color: var(--amber);
+    }
+
+    /* ─── COMPOUND GRID ──────────────────────────── */
+    .compounds-section {
+      padding: 3rem 0 5rem;
+    }
+
+    .section-label {
+      text-align: center;
+      font-family: var(--serif-body);
+      font-size: 0.7rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--sage);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+      text-align: center;
+      font-family: var(--serif-display);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 400;
+      color: var(--cream);
+      margin-bottom: 3rem;
+    }
+
+    .section-title em { color: var(--amber); font-style: italic; }
+
+    .compounds-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5px;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.1);
+    }
+
+    .compound-card {
+      background: rgba(13,31,15,0.85);
+      padding: 2.5rem 2rem;
+      position: relative;
+      transition: background 0.3s;
+    }
+
+    .compound-card:hover { background: rgba(30,51,32,0.9); }
+
+    .compound-symbol {
+      font-family: var(--serif-display);
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--sage);
+      line-height: 1;
+      margin-bottom: 0.8rem;
+      opacity: 0.6;
+    }
+
+    .compound-name {
+      font-family: var(--serif-display);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--amber);
+      margin-bottom: 0.5rem;
+    }
+
+    .compound-full {
+      font-family: var(--serif-body);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mist);
+      margin-bottom: 1rem;
+    }
+
+    .compound-desc {
+      font-family: var(--serif-body);
+      font-size: 1rem;
+      line-height: 1.65;
+      color: rgba(242,234,216,0.8);
+    }
+
+    /* ─── PHILOSOPHY STRIP ───────────────────────── */
+    .philosophy {
+      padding: 5rem 0;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .philosophy-aside {
+      position: sticky;
+      top: 2rem;
+    }
+
+    .philosophy-aside-title {
+      font-family: var(--serif-display);
+      font-size: 2.8rem;
+      font-weight: 900;
+      line-height: 1.1;
+      color: var(--white);
+    }
+
+    .philosophy-aside-title em {
+      display: block;
+      font-style: italic;
+      color: var(--amber);
+    }
+
+    .philosophy-aside-rule {
+      width: 40px;
+      height: 2px;
+      background: var(--gold);
+      margin: 1.5rem 0;
+    }
+
+    .philosophy-aside-sub {
+      font-family: var(--serif-accent);
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--mist);
+      line-height: 1.7;
+    }
+
+    .philosophy-body {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .philosophy-para {
+      font-family: var(--serif-body);
+      font-size: 1.15rem;
+      line-height: 1.85;
+      color: rgba(242,234,216,0.85);
+    }
+
+    .philosophy-para strong {
+      color: var(--amber);
+      font-style: italic;
+    }
+
+    .philosophy-quote {
+      padding: 1.8rem 2rem;
+      border-left: 2px solid var(--gold);
+      font-family: var(--serif-display);
+      font-size: 1.35rem;
+      font-style: italic;
+      color: var(--cream);
+      background: rgba(201,168,76,0.05);
+    }
+
+    /* ─── LOGO FOOTER ────────────────────────────── */
+    .logo-footer {
+      padding: 5rem 0 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      border-top: 1px solid rgba(201,168,76,0.15);
+    }
+
+    .logo-stamp {
+      width: min(260px, 60vw);
+      filter:
+        brightness(0) invert(1)
+        drop-shadow(0 0 30px rgba(201,168,76,0.3));
+      opacity: 0.92;
+      animation: stampGlow 4s ease-in-out infinite;
+    }
+
+    @keyframes stampGlow {
+      0%, 100% { filter: brightness(0) invert(1) drop-shadow(0 0 20px rgba(201,168,76,0.2)); }
+      50%       { filter: brightness(0) invert(1) drop-shadow(0 0 40px rgba(201,168,76,0.5)); }
+    }
+
+    .footer-tagline {
+      font-family: var(--serif-display);
+      font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      color: var(--mist);
+      text-align: center;
+    }
+
+    .footer-tagline em { color: var(--amber); font-style: italic; }
+
+    .footer-legal {
+      font-family: var(--serif-body);
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      color: rgba(143,184,138,0.4);
+      text-align: center;
+      line-height: 1.8;
+      padding-bottom: 2rem;
+    }
+
+    /* ─── SCROLL REVEAL ──────────────────────────── */
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.9s cubic-bezier(0.16,1,0.3,1), transform 0.9s cubic-bezier(0.16,1,0.3,1);
+    }
+
+    [data-reveal].visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ─── RESPONSIVE ─────────────────────────────── */
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 4rem 0 3rem;
+      }
+
+      .hero::before { display: none; }
+      .hero-text { padding-right: 0; }
+      .hero-photo-wrap { order: -1; }
+      .photo-frame { width: min(320px, 100%); }
+
+      .philosophy {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .philosophy-aside { position: static; }
+
+      .tagline-trio { gap: 2.5rem; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-headline { font-size: 2.6rem; }
+      .site-header { flex-direction: column; gap: 0.4rem; text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- AGE GATE RIBBON -->
+  <div class="age-ribbon">
+    🌿 For Adults 21+ Only &nbsp;·&nbsp; Cannabis products may not be legal in all areas &nbsp;·&nbsp; Consult your physician
+  </div>
+
+  <!-- ─── HEADER ─────────────────────────────── -->
+  <div class="page">
+    <header class="site-header" role="banner">
+      <span class="header-wordmark">EatYourWeed.com</span>
+      <span class="header-tagline">Be Happy · Be Healthy · Live Long</span>
+    </header>
+  </div>
+
+  <!-- ─── HERO ──────────────────────────────── -->
+  <main>
+    <div class="page">
+      <section class="hero" aria-label="Hero">
+
+        <div class="hero-text" data-reveal>
+          <div class="hero-eyebrow">Whole-Plant Cannabis Nutrition</div>
+
+          <h1 class="hero-headline">
+            Eat Your<br>
+            <em>Weed</em>
+          </h1>
+
+          <p class="hero-sub">The most natural way to harness<br>the full power of the cannabis plant.</p>
+
+          <div class="hero-pills" role="list" aria-label="Cannabis compounds">
+            <span class="pill" role="listitem">CBD</span>
+            <span class="pill" role="listitem">CBG</span>
+            <span class="pill" role="listitem">CBN</span>
+            <span class="pill" role="listitem">THC</span>
+            <span class="pill" role="listitem">Terpenes</span>
+            <span class="pill" role="listitem">Flavonoids</span>
+            <span class="pill" role="listitem">Full-Spectrum</span>
+          </div>
+
+          <a href="#learn-more" class="hero-cta">Explore the Plant</a>
+        </div>
+
+        <div class="hero-photo-wrap" data-reveal>
+          <figure class="photo-frame">
+            <div class="photo-inner-frame">
+              <img
+               src=https://raw.githubusercontent.com/mkedean-310/Eatyourweed/refs/heads/main/baby.jpg
+                alt="Curious child at a dinner table — even babies know good food when they see it. EatYourWeed.com"
+                class="hero-img"
+                width="400"
+                height="400"
+                loading="eager"
+              />
+              <div class="photo-tint" aria-hidden="true"></div>
+            </div>
+            <figcaption class="photo-caption">
+              Even the youngest among us know: <em>eat well, live long.</em>
+            </figcaption>
+          </figure>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- ─── TAGLINE BANNER ──────────────────── -->
+    <section class="tagline-banner" aria-label="Brand pillars" data-reveal>
+      <div class="page">
+        <div class="ornamental-divider" aria-hidden="true">
+          <span class="divider-leaf">🌿</span>
+        </div>
+        <div class="tagline-trio">
+          <div class="tagline-item">
+            <span class="tagline-icon" aria-hidden="true">☀️</span>
+            <span class="tagline-word">Be <em>Happy</em></span>
+          </div>
+          <div class="tagline-item">
+            <span class="tagline-icon" aria-hidden="true">🌿</span>
+            <span class="tagline-word">Be <em>Healthy</em></span>
+          </div>
+          <div class="tagline-item">
+            <span class="tagline-icon" aria-hidden="true">✨</span>
+            <span class="tagline-word">Live <em>Long</em></span>
+          </div>
+        </div>
+        <div class="ornamental-divider" aria-hidden="true" style="margin-top:2.5rem">
+          <span class="divider-leaf">🌿</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── COMPOUNDS ──────────────────────── -->
+    <section class="compounds-section" id="learn-more" aria-labelledby="compounds-title">
+      <div class="page">
+        <p class="section-label">The Science</p>
+        <h2 class="section-title" id="compounds-title">Know Your <em>Cannabinoids</em></h2>
+
+        <div class="compounds-grid" role="list">
+
+          <article class="compound-card" data-reveal role="listitem">
+            <div class="compound-symbol" aria-hidden="true">CBD</div>
+            <h3 class="compound-name">Cannabidiol</h3>
+            <p class="compound-full">CBD · Non-Psychoactive</p>
+            <p class="compound-desc">The workhorse of wellness. CBD supports calm, reduces discomfort, and promotes balance without any intoxicating effect — making it the most widely embraced cannabinoid for daily nutrition.</p>
+          </article>
+
+          <article class="compound-card" data-reveal role="listitem">
+            <div class="compound-symbol" aria-hidden="true">CBG</div>
+            <h3 class="compound-name">Cannabigerol</h3>
+            <p class="compound-full">CBG · The Mother Cannabinoid</p>
+            <p class="compound-desc">Often called the "stem cell" of cannabinoids — CBG is the precursor from which all others are born. It's gaining attention for its potential to support mood, gut health, and mental clarity.</p>
+          </article>
+
+          <article class="compound-card" data-reveal role="listitem">
+            <div class="compound-symbol" aria-hidden="true">CBN</div>
+            <h3 class="compound-name">Cannabinol</h3>
+            <p class="compound-full">CBN · The Sleep Cannabinoid</p>
+            <p class="compound-desc">As cannabis ages, THC transforms into CBN — a mildly sedative, deeply relaxing compound. Beloved by those seeking natural support for restful sleep and nighttime recovery.</p>
+          </article>
+
+          <article class="compound-card" data-reveal role="listitem">
+            <div class="compound-symbol" aria-hidden="true">THC</div>
+            <h3 class="compound-name">Tetrahydrocannabinol</h3>
+            <p class="compound-full">THC · Where Permitted by Law</p>
+            <p class="compound-desc">The most famous of all. When consumed as food, THC metabolizes into 11-hydroxy-THC — a more potent, longer-lasting experience than smoking, prized for deep therapeutic effect.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PHILOSOPHY ─────────────────────── -->
+    <section class="philosophy page" aria-labelledby="philosophy-title">
+      <div class="philosophy-aside" data-reveal>
+        <h2 class="philosophy-aside-title" id="philosophy-title">
+          Food is<br>
+          <em>Medicine</em>
+        </h2>
+        <div class="philosophy-aside-rule" aria-hidden="true"></div>
+        <p class="philosophy-aside-sub">
+          Humans have been consuming cannabis as food and medicine for over 10,000 years. We're just rediscovering what our ancestors already knew.
+        </p>
+      </div>
+
+      <div class="philosophy-body" data-reveal>
+        <p class="philosophy-para">
+          Your body already speaks the language of cannabis. The <strong>endocannabinoid system</strong> — a vast signaling network running throughout your nervous system, immune response, and gut — is literally designed to interact with plant-based cannabinoids. You were built for this.
+        </p>
+
+        <blockquote class="philosophy-quote">
+          "Let food be thy medicine, and medicine be thy food."<br>
+          <small style="font-size:0.75em; letter-spacing:0.1em; color:var(--mist);">— Hippocrates, 400 BC</small>
+        </blockquote>
+
+        <p class="philosophy-para">
+          Eating cannabis — rather than smoking or vaping it — delivers a fundamentally different, often more therapeutic experience. The plant's compounds pass through the digestive system, engage the liver, and enter the bloodstream in a form that can last <strong>four to eight hours</strong>, providing sustained relief for pain, anxiety, insomnia, and inflammation.
+        </p>
+
+        <p class="philosophy-para">
+          At EatYourWeed.com, we believe in the whole plant. Not isolated extracts. Not synthetic compounds. The <strong>entourage effect</strong> — the synergy of cannabinoids, terpenes, and flavonoids working together — is where the real magic lives.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER / LOGO ──────────────────── -->
+  <footer class="page" role="contentinfo">
+    <div class="logo-footer" data-reveal>
+
+
+      <p class="footer-tagline">
+        Be <em>Happy</em> &nbsp;·&nbsp; Be <em>Healthy</em> &nbsp;·&nbsp; Live <em>Long</em>
+      </p>
+
+      <p class="footer-legal">
+        © 2026 EatYourWeed.com &nbsp;·&nbsp; All Rights Reserved<br>
+        For Adults 21+ Only &nbsp;·&nbsp; These statements have not been evaluated by the FDA.<br>
+        This website is for educational purposes only and does not constitute medical advice.<br>
+        Cannabis laws vary by jurisdiction — know your local laws before purchasing or consuming.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- ─── SCROLL REVEAL JS ───────────────── -->
+  <script>
+    (function () {
+      const els = document.querySelectorAll('[data-reveal]');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(el => el.classList.add('visible'));
+        return;
+      }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e, i) => {
+          if (e.isIntersecting) {
+            setTimeout(() => e.target.classList.add('visible'), i * 80);
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(el => io.observe(el));
+    })();
+  </script>
+
+</body>
+</html>
